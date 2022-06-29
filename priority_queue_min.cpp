@@ -138,8 +138,8 @@ void Priority_Queue_Min::printCodes(Node * x){ // traverse the huffman tree and 
 				tmp->right->code += tmp->code;
 				tmp->right->code.append(s2);
 			}
-			if(tmp->left == NULL && tmp -> right == NULL) //Print huffman codes
-				print_node(tmp);
+			/*if(tmp->left == NULL && tmp -> right == NULL) //Print huffman codes
+				print_node(tmp);*/
 			q.Push(tmp->left, current_level + 1);
 			q.Push(tmp->right, current_level + 1);
 		}

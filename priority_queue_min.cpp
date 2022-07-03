@@ -205,7 +205,7 @@ int Priority_Queue_Min::encode(string s, int n) {
 	output.close();
 	return zeroes;
 }
-void Priority_Queue_Min::decode(int numb) {
+void Priority_Queue_Min::decode(int numb) { ////numb = number of attached zeroes
 	ifstream input("encoded.txt");
 	string bintxt;
 	while(input){

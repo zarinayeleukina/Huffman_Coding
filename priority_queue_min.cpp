@@ -177,8 +177,7 @@ int Priority_Queue_Min::encode(string s, int n) {
 
 	//fill the rest ones with 0s
 	int zeroes = 8 - (codes.length() % 8); //1 char = 8 bits
-	for(int i = 0; i < zeroes; i++)
-		codes += '0';
+	codes.append(zeroes, '0');
 
 	//save to txt file
 	ofstream output("encoded.txt");
